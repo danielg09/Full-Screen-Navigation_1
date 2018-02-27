@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Full Screen Nav</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="nav" id="nav">
+			<a href="javascript:void(0)" id="close" class="close" onclick="closeNav()">&times;</a>
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Blog</a>
+			<a href="">Contact</a>
+		</div>
+		
+		<span class="open" id="open" onclick="openNav()">&#9776;</span>
+
+		<h1>Full Screen Navigation</h1>
+
+	</div>
+
+	<script type="text/javascript">
+		
+		function openNav(){
+			document.getElementById("open").style.display = "none";
+			document.getElementById("nav").style.width = "100%";
+		}
+
+		function closeNav(){
+			document.getElementById("nav").style.width = "0";
+			document.getElementById("open").style.display = "block";
+			
+		}
+
+	</script>
+
+</body>
+</html>
